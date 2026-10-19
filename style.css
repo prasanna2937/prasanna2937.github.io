@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 56px;
+}
+
+/* Navbar kinda section titles dhaagakunda */
+section {
+  scroll-margin-top: 56px;
+}
+
+/* HERO */
+.hero {
+  background-color: #1f2a44;
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #ffc107;
+  color: #1f2a44;
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-badge {
+  background-color: #198754;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.hello {
+  margin-bottom: 0;
+  color: #ffc107;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* SECTION TITLES */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* SKILLS (Flexbox) */
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-box {
+  flex: 1 1 220px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: #1f2a44;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 4px 4px 0 0;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* TIMELINE */
+.timeline-item {
+  border-left: 3px solid #ffc107;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+.footer-link {
+  color: #ffc107;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
